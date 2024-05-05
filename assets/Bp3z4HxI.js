@@ -1,1 +1,0 @@
-import{r as e}from"./BIOGrwT5.js";const o=e(""),a=e(""),u=async n=>{const r=await fetch(n+".md").then(function(t){return t.text()}).then(function(t){return t});o.value=r,a.value=n};function i(){return{getPageMarkdown:u,pathToFile:a,viewedPageMarkdown:o}}export{i as u};

@@ -35,9 +35,9 @@ definePageMeta({
 const form = reactive({ email: '', password: '' })
 
 const login = async () => {
-  // ElMessage.error({
-  //   message:
-  //     'Koalapi development has been stopped and the app is no longer available. Please make an issue here https://github.com/HugoMichard/PortfolioKoalapi to ask for access'
-  // })
+  ElMessage.error({
+    message:
+      'Koalapi development has been stopped and the app is no longer available. Please make an issue here https://github.com/HugoMichard/PortfolioKoalapi to ask for access'
+  })
 }
 </script>

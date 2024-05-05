@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-14 pb-8" id='premium'>
+  <section class="pt-14 pb-8" id="premium">
     <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
       <div class="relative max-w-xl mx-auto text-center">
         <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -24,5 +24,61 @@
 </template>
 
 <script setup>
-const subscriptions = [{"id": 1, "name": "free", "price": 0.0, "nb_message": 30, "nb_qa": 5, "nb_url": 1, "nb_doc": 1, "max_doc_size": 1, "has_pdf": true, "has_csv": false, "memory": 0, "refresh_frequency": "monthly", "link": " "}, {"id": 2, "name": "lite", "price": 29.99, "nb_message": 500, "nb_qa": 20, "nb_url": 3, "nb_doc": 3, "max_doc_size": 3, "has_pdf": true, "has_csv": false, "memory": 0, "refresh_frequency": "weekly", "link": "https://buy.stripe.com/test_14k8zP7Ked3A2S4aEH"}, {"id": 3, "name": "pro", "price": 99.99, "nb_message": 3000, "nb_qa": 50, "nb_url": 10, "nb_doc": 10, "max_doc_size": 5, "has_pdf": true, "has_csv": false, "memory": 0, "refresh_frequency": "daily", "link": "https://buy.stripe.com/test_bIYbM12pU7JgcsEcMQ"}]
+const subscriptions = [
+  {
+    id: 1,
+    title: 'free',
+    description: 'Get started for free',
+    is_fixed: true,
+    price: 0.0,
+    nb_users: 3,
+    nb_calls_per_user: 10,
+    nb_sources: 2,
+    nb_apis: 1,
+    nb_endpoints: 1,
+    nb_pricings: 1,
+    percent_for_koalapi: 15,
+    has_file_integration: true,
+    has_api_integration: true,
+    has_sql_integration: true,
+    link: ' '
+  },
+  {
+    id: 2,
+    title: 'lite',
+    description: 'For personal use and limited sharing',
+    price: 29.99,
+    nb_users: 10,
+    nb_calls_per_user: 1000,
+    nb_sources: 5,
+    nb_apis: 3,
+    nb_endpoints: 10,
+    nb_pricings: 2,
+    isMostPop: true,
+    percent_for_koalapi: 15,
+    has_file_integration: true,
+    has_api_integration: true,
+    has_sql_integration: true,
+    frequency: 'month',
+    link: 'https://buy.stripe.com/test_bIY4gQdn03Gwch214c'
+  },
+  {
+    id: 3,
+    title: 'pro',
+    description: 'Recommended for monetized products',
+    price: 99.99,
+    nb_users: 1000,
+    nb_calls_per_user: 10000,
+    nb_sources: 20,
+    nb_apis: 10,
+    nb_endpoints: 30,
+    nb_pricings: 3,
+    percent_for_koalapi: 5,
+    has_file_integration: true,
+    has_api_integration: true,
+    has_sql_integration: true,
+    frequency: 'month',
+    link: 'https://buy.stripe.com/test_cN29Ba82Gfpe4OA14d'
+  }
+]
 </script>

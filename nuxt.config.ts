@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const ONE_DAY = 60 * 60 * 24 * 1000;
 const ONE_WEEK = ONE_DAY * 7;
+const baseURL = '/PortfolioKoalapi/'
 
 export default defineNuxtConfig({
   imports: {
@@ -36,5 +37,12 @@ export default defineNuxtConfig({
     cookieSecret: process.env.COOKIE_SECRET || "secret",
     cookieExpires: parseInt(process.env.COOKIE_REMEMBER_ME_EXPIRES || ONE_DAY.toString(), 10), // 1 day
     cookieRememberMeExpires: parseInt(process.env.COOKIE_REMEMBER_ME_EXPIRES || ONE_WEEK.toString(), 10), // 7 days
+  },
+  app: {
+    baseURL: baseURL,
+    buildAssetsDir: 'assets',
+    head: {
+      link: [{ rel: 'icon', type: 'image/x-icon', href: `${baseURL}/images/favicon.ico` }]
+    }
   }
 })

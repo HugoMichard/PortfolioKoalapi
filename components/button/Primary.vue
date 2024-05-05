@@ -6,6 +6,7 @@
       ' p-' +
       props.padding
     "
+    :style="'padding: ' + props.padding * 0.25 + 'rem'"
   >
     <slot />
   </button>

@@ -25,6 +25,7 @@
     "chart.js": "^4.4.1",
     "chartjs-adapter-date-fns": "^3.0.0",
     "date-fns": "^3.3.1",
+    "gh-pages": "^6.1.1",
     "nuxt-jsoneditor": "^1.8.3",
     "pinia": "^2.1.6",
     "pinia-plugin-persistedstate": "^3.2.1",
